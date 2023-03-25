@@ -10,8 +10,9 @@ const SearchBar = (props) =>{
     return(
         <>
             <input type="text" onChange={handleChange}></input>
-            <button onClick={()=>{
-                props.onSearch(id)}}
+            <button onClick={ () =>{
+                props.onSearch(id)
+            }}
             >Buscar</button>
         </>
     );

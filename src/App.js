@@ -9,7 +9,7 @@ const [users,setUsers] = useState([]);
 
 const searchUser = (id) =>{
   fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
-  .then( res => res.json())
+  .then( (res) => res.json())
   .then( data => setUsers(...users,data))// data es el objeto del usuario
 }
 
